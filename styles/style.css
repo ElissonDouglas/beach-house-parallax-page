@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,400;1,100&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Chivo Mono', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ----- HEADER ------- */
+header {
+    height: 100vh;
+    background-color: black;
+    background-image: url(../images/header-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.531);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    font-size: 2.5em;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.social a{
+    color: rgb(255, 255, 255);
+    gap: 1em;
+    transition: .3s;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+header h1, p{
+    color: white;
+    text-align: center;
+}
+header p {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+
+
+/* ----- SECTIONS ------- */
+
+
+.text {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+}
+
+.text h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.text p, .image p{
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.image, .albums{
+    box-shadow: inset 10px 10px 30px rgba(0, 0, 0, 0.367);
+    width: 100%;
+    height: 800px;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.image#img1 {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)), url(../images/Beach-House-Noel-Vasquez.jpg);
+}
+
+.image#img2 {
+    background-color: gray;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)), url(../images/legrand-and-scally.jpeg);
+}
+
+.image#img2 p, .albums p{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.542);
+    padding: 20px;
+    width: 50%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.457);
+    color: white;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+/* ------ALBUMS ------ */
+
+
+
+.albums h1 {
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.66);
+}
+
+.albums p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.albums#img1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)), url(../images/devotion-album-cover.jpg);
+}
+
+.albums#img2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)), url(../images/teendream-album-cover.jpeg);
+}
+
+.albums#img3 {
+    height: 1000px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.624), rgba(0, 0, 0, 0.624)), url(../images/bloom-album-cover.jpeg);
+}
+
+.albums#img3 p, .albums#img3 h1 {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.783);
+}
+
+.albums#img3 h1 {
+    width: 51rem;
+}
+
+.albums#img4 {
+    height: 1000px;
+    background-image: url(../images/depression-cherry-album-cover.jpeg);
+}
+
+.albums#img5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)),url(../images/thank-your-lucky-stars.jpeg);
+}
+
+.albums#img6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)),url(../images/b-sides-and-rarities-album-cover.jpg);
+}
+
+.albums#img7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.591)),url(../images/7-album-cover.jpeg);
+}
+
+.albums#img8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.145), rgba(0, 0, 0, 0.145)),url(../images/once-twice-melody-album-cover.jpeg);
+}
+
+/* ----- FOOTER ---- */
+
+footer {
+    background-color: black;
+    padding: 50px;
+    font-size: 1.5em;
+}
+
+footer a {
+    text-decoration: underline;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        box-sizing: content-box;
+    }
+    header {
+        width: 100vw;
+        font-size: 0.7em;
+        background-image: url(../images/header-mobile.jpeg);
+        background-position: right center;
+    }
+    
+    .text h1 {
+        font-size: 1.5em;
+    }
+
+    .text p{
+        text-align: center;
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .image p, .albums p, .image#img2 p {
+        font-size: 0.9em;
+        width:  400px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        transform: translate(-50%, 50);
+    }
+    footer {
+        font-size: 1em;
+    }
+}
