@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+@media screen and (min-width:350px) and (max-width: 768px) {
+    header {
+        background-image: url(../images/header-mobile.jpeg);
+    }
+
+    .text {
+        padding: 50px 25px;
+    }
+
+    .text p {
+        text-align: justify;
+        font-size: 1.2em;
+    }
+
+    .image#img1 {
+        background-image: url(../images/mobile-responsive2.jpg);
+    }
+
+    .image#img2 {
+       background-image: linear-gradient(rgba(0, 0, 0, 0.394), rgba(0, 0, 0, 0.394)), url(../images/mobile-resposive3.jpeg);
+       background-position: bottom;
+    }
+
+    .image#img2 p, .albums p{
+        font-size: 1.1em;
+        width: 100%;
+    }
+
+    .albums {
+        padding: 10px;
+    }
+    .albums p {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 5px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        background-image: url(../images/header-mobile.jpeg);
+    }
+
+    .text p {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .image#img1 {
+        background-image: url(../images/mobile-responsive1.jpg);
+        background-position: bottom;
+    }
+
+    .image#img2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.394), rgba(0, 0, 0, 0.394)), url(../images/mobile-resposive3.jpeg);
+        background-position: bottom;
+     }
+
+    .image#img2 p, .albums p {
+        font-size: 1.3em;
+        width: 100%;
+    }
+    footer {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header h1 {
+        
+    }
+
+    .image#img2 p, .albums p, .text p{
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 1.3em;
+    }
+}

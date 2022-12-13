@@ -32,6 +32,11 @@ header {
     justify-content: center;
 }
 
+header h1 {
+    background-color: rebeccapurple;
+    border-radius: 6px;
+}
+
 .content {
     background-color: rgba(0, 0, 0, 0.531);
     padding: 10px;
@@ -77,16 +82,17 @@ h1 {
 
 
 .text {
-    background-color: rgb(255, 255, 255);
-    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.857);
+    padding: 50px 100px 50px 100px;
 }
 
 .text h1{
+    color: white;
     text-align: center;
     margin-bottom: 30px;
 }
 .text p, .image p{
-    color: black;
+    color: white;
     text-align: center;
     font-size: 1.5em;
 }
@@ -105,11 +111,13 @@ h1 {
 .image#img1 {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)), url(../images/Beach-House-Noel-Vasquez.jpg);
+    background-position: top center;
 }
 
 .image#img2 {
     background-color: gray;
     background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)), url(../images/legrand-and-scally.jpeg);
+    background-position: bottom center;
 }
 
 .image#img2 p, .albums p{
@@ -141,16 +149,16 @@ h1 {
 }
 
 .albums#img1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)), url(../images/devotion-album-cover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(../images/devotion-album-cover.jpg);
 }
 
 .albums#img2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)), url(../images/teendream-album-cover.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(../images/teendream-album-cover.jpeg);
 }
 
 .albums#img3 {
     height: 1000px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.624), rgba(0, 0, 0, 0.624)), url(../images/bloom-album-cover.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(../images/bloom-album-cover.jpeg);
 }
 
 .albums#img3 p, .albums#img3 h1 {
@@ -164,11 +172,11 @@ h1 {
 
 .albums#img4 {
     height: 1000px;
-    background-image: url(../images/depression-cherry-album-cover.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.394), rgba(0, 0, 0, 0.394)), url(../images/depression-cherry-album-cover.jpeg);
 }
 
 .albums#img5 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.291)),url(../images/thank-your-lucky-stars.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),url(../images/thank-your-lucky-stars.jpeg);
 }
 
 .albums#img6 {
@@ -196,36 +204,3 @@ footer a {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
-    * {
-        box-sizing: content-box;
-    }
-    header {
-        width: 100vw;
-        font-size: 0.7em;
-        background-image: url(../images/header-mobile.jpeg);
-        background-position: right center;
-    }
-    
-    .text h1 {
-        font-size: 1.5em;
-    }
-
-    .text p{
-        text-align: center;
-        font-size: 0.9em;
-        text-align: center;
-    }
-
-    .image p, .albums p, .image#img2 p {
-        font-size: 0.9em;
-        width:  400px;
-        position: absolute;
-        right: 0;
-        left: 0;
-        transform: translate(-50%, 50);
-    }
-    footer {
-        font-size: 1em;
-    }
-}
