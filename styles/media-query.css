@@ -28,7 +28,7 @@
         width: 100%;
     }
 
-    .albums {
+    .albums, .image {
         padding: 10px;
     }
     .albums p {
@@ -37,7 +37,7 @@
 
     footer {
         padding: 5px;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
 
