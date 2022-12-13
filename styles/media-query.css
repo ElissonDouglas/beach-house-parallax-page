@@ -72,10 +72,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-    header h1 {
-        
-    }
-
     .image#img2 p, .albums p, .text p{
         font-size: 1.2em;
         width: 100%;
